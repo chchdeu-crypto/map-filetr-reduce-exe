@@ -49,3 +49,12 @@ players = [
 ]
 new_players=lambda x :{"name": x["name"], "score": x["score"]+5}
 print(list(map(new_players,players)))
+
+#mission 10
+orders = [
+    {"id": 1, "item": "Book", "amount": 3, "price": 40},
+    {"id": 2, "item": "Pen", "amount": 10, "price": 5},
+    {"id": 3, "item": "Bag", "amount": 1, "price": 120}
+]
+result=lambda order : f"order {order["id"]}: {order["item"]} total is {order["amount"] * order["price"]}"
+print(list(map(result,orders)))
