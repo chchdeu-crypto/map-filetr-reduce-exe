@@ -11,3 +11,8 @@ print(list(prices_with_tax))
 words = ["cat", "elephant", "dog", "python"]
 langth=lambda word :len(word)
 print(list(map(langth,words)))
+
+#mission 4
+names = ["dan", "maya", "ron", "lea"]
+upper_names=map(lambda name : name.upper(),names)
+print(list(upper_names))
