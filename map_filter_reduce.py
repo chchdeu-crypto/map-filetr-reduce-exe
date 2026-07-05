@@ -76,3 +76,7 @@ print(list(filter(lambda word : True if len(word)<=3 else False,words)))
 #mission 4
 names = ["Adam", "Dana", "Amit", "Noa", "Alon"]
 print(list(filter(lambda name: True if name[0]=="A" else False,names)))
+
+#mission 5
+numbers = [-5, 3, 0, 12, -2, 8]
+print(list(filter(lambda num : True if num >0 else False,numbers)))
