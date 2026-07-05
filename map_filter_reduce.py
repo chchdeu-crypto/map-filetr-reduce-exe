@@ -103,3 +103,12 @@ print(list(filter(lambda user : True if user["active"]==True else False,users)))
 #mission 8
 passwords = ["abc", "hello123", "Python2026", "pass", "GoodPass99"]
 print(list(filter(lambda passw: True if len(passw)>=8 else False,passwords)))
+
+#mission 9
+tasks = [
+    {"title": "Clean room", "done": True, "priority": 2},
+    {"title": "Study Python", "done": False, "priority": 1},
+    {"title": "Play game", "done": False, "priority": 5},
+    {"title": "Send email", "done": True, "priority": 1}
+]
+print(list(filter(lambda task : True if task["done"]!=True and task["priority"]<=3 else False,tasks)))
