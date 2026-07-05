@@ -21,3 +21,8 @@ print(list(upper_names))
 users=["Noa", "Adam", "Lior", "Tamar"]
 user_messege=map(lambda name : f"hello {name}",users)
 print(list(user_messege))
+
+#mission 6
+meters = [1.5, 2, 0.75, 3.2]
+centimeters=map(lambda meter : meter*100,meters)
+print(list(centimeters))
