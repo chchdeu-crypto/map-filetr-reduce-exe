@@ -40,3 +40,12 @@ products = [
 ]
 cost=lambda prodact : f"{prodact["name"]} cost {prodact["price"]}"
 print(list(map(cost,products)))
+
+#mission 9
+players = [
+    {"name": "Dana", "score": 70},
+    {"name": "Yoni", "score": 85},
+    {"name": "Rami", "score": 40}
+]
+new_players=lambda x :{"name": x["name"], "score": x["score"]+5}
+print(list(map(new_players,players)))
