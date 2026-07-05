@@ -26,3 +26,8 @@ print(list(user_messege))
 meters = [1.5, 2, 0.75, 3.2]
 centimeters=map(lambda meter : meter*100,meters)
 print(list(centimeters))
+
+#mission 7
+grades = [95, 40, 67, 88, 52]
+pass_grades=map(lambda grade : "pass" if grade>=60 else "fail",grades)
+print(list(pass_grades))
