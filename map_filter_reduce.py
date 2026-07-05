@@ -16,3 +16,8 @@ print(list(map(langth,words)))
 names = ["dan", "maya", "ron", "lea"]
 upper_names=map(lambda name : name.upper(),names)
 print(list(upper_names))
+
+#mission 5
+users=["Noa", "Adam", "Lior", "Tamar"]
+user_messege=map(lambda name : f"hello {name}",users)
+print(list(user_messege))
