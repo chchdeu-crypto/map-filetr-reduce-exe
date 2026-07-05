@@ -31,3 +31,12 @@ print(list(centimeters))
 grades = [95, 40, 67, 88, 52]
 pass_grades=map(lambda grade : "pass" if grade>=60 else "fail",grades)
 print(list(pass_grades))
+
+#mission 8
+products = [
+    {"name": "Bread", "price": 8},
+    {"name": "Milk", "price": 6},
+    {"name": "Eggs", "price": 15}
+]
+cost=lambda prodact : f"{prodact["name"]} cost {prodact["price"]}"
+print(list(map(cost,products)))
