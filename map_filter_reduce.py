@@ -72,3 +72,7 @@ print(list(filter(lambda grade : True if grade>=60 else False,grades)))
 #misison 3
 words = ["dog", "elephant", "cat", "computer", "sun"]
 print(list(filter(lambda word : True if len(word)<=3 else False,words)))
+
+#mission 4
+names = ["Adam", "Dana", "Amit", "Noa", "Alon"]
+print(list(filter(lambda name: True if name[0]=="A" else False,names)))
