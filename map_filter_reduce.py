@@ -112,3 +112,12 @@ tasks = [
     {"title": "Send email", "done": True, "priority": 1}
 ]
 print(list(filter(lambda task : True if task["done"]!=True and task["priority"]<=3 else False,tasks)))
+
+#mission 10
+students = [
+    {"name": "Noa", "grade": 90, "attendance": 95},
+    {"name": "Dan", "grade": 55, "attendance": 100},
+    {"name": "Rina", "grade": 80, "attendance": 70},
+    {"name": "Eli", "grade": 75, "attendance": 85}
+]
+print(list(filter(lambda student: True if student["grade"]>=70 and student["attendance"]>=80 else False,students)))
