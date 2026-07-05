@@ -90,3 +90,12 @@ products = [
 ]
 prodact=lambda x : x["name"] if x["price"]>50 else False
 print(list(filter(prodact,products)))
+
+#mission 7
+users = [
+    {"name": "Dana", "active": True},
+    {"name": "Ron", "active": False},
+    {"name": "Maya", "active": True},
+    {"name": "Gil", "active": False}
+]
+print(list(filter(lambda user : True if user["active"]==True else False,users)))
