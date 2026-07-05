@@ -80,3 +80,13 @@ print(list(filter(lambda name: True if name[0]=="A" else False,names)))
 #mission 5
 numbers = [-5, 3, 0, 12, -2, 8]
 print(list(filter(lambda num : True if num >0 else False,numbers)))
+
+#mission 6
+products = [
+    {"name": "Book", "price": 40},
+    {"name": "Bag", "price": 120},
+    {"name": "Pen", "price": 5},
+    {"name": "Shirt", "price": 60}
+]
+prodact=lambda x : x["name"] if x["price"]>50 else False
+print(list(filter(prodact,products)))
