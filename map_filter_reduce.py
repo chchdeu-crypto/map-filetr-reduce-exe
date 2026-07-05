@@ -99,3 +99,7 @@ users = [
     {"name": "Gil", "active": False}
 ]
 print(list(filter(lambda user : True if user["active"]==True else False,users)))
+
+#mission 8
+passwords = ["abc", "hello123", "Python2026", "pass", "GoodPass99"]
+print(list(filter(lambda passw: True if len(passw)>=8 else False,passwords)))
