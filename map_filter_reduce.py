@@ -67,4 +67,8 @@ print(list(filter(even_num,numbers)))
 
 #mission 2
 grades = [100, 55, 70, 40, 88, 59]
-print(list(filter(lambda grade : True if grade>60 else False,grades)))
+print(list(filter(lambda grade : True if grade>=60 else False,grades)))
+
+#misison 3
+words = ["dog", "elephant", "cat", "computer", "sun"]
+print(list(filter(lambda word : True if len(word)<=3 else False,words)))
