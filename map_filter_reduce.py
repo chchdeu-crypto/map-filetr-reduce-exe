@@ -58,3 +58,9 @@ orders = [
 ]
 result=lambda order : f"order {order["id"]}: {order["item"]} total is {order["amount"] * order["price"]}"
 print(list(map(result,orders)))
+
+#part 3
+#mission 1
+numbers = [4, 7, 10, 13, 18, 21]
+even_num=lambda num : True if num %2==0 else False
+print(list(filter(even_num,numbers)))
