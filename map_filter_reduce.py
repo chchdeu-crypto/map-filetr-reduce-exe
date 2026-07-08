@@ -158,3 +158,9 @@ print(result)
 numbers = [2, 3, 4, 5]
 result = reduce(lambda x, y: x * y, numbers)
 print(result)
+
+#mission 3
+words = ["cat", "elephant", "dog", "computer"]
+longest = reduce(lambda x, y: x if len(x) >= len(y) else y, words)
+
+print(longest)
