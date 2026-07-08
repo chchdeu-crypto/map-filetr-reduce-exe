@@ -169,3 +169,15 @@ print(longest)
 words = ["Python", "is", "very", "useful"]
 sentence = reduce(lambda x, y: x + " " + y, words)
 print(sentence)
+
+#mission 5
+from functools import reduce
+
+students = [
+    {"name": "Dana", "grade": 85},
+    {"name": "Ron", "grade": 92},
+    {"name": "Maya", "grade": 78},
+    {"name": "Gil", "grade": 95}
+]
+highest_student = reduce(lambda x, y: x if x["grade"] > y["grade"] else y, students)
+print(highest_student)
