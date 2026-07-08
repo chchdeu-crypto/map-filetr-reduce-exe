@@ -153,3 +153,8 @@ numbers = [5, 10, 20, 15]
 result = reduce(lambda x, y: x + y, numbers)
 
 print(result)
+
+#mission 2
+numbers = [2, 3, 4, 5]
+result = reduce(lambda x, y: x * y, numbers)
+print(result)
