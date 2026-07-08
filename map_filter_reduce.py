@@ -144,3 +144,12 @@ print(list(filter(lambda student: True if student["grade"]>=70 and student["atte
 #mission 5
 #`reduce` is preferable when I’m performing a simple operation on the entire list such as multiplying the elements together because it immediately clarifies the objective.
 #I will use a for-loop when I want to perform several operations and check conditions, such as doubling only even numbers.
+
+#part 5
+#mission 1
+from functools import reduce
+
+numbers = [5, 10, 20, 15]
+result = reduce(lambda x, y: x + y, numbers)
+
+print(result)
