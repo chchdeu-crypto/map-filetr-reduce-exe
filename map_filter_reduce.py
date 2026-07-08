@@ -121,3 +121,26 @@ students = [
     {"name": "Eli", "grade": 75, "attendance": 85}
 ]
 print(list(filter(lambda student: True if student["grade"]>=70 and student["attendance"]>=80 else False,students)))
+
+
+
+#part 4
+#mission 1
+#Because it takes the first two elements and adds them together, then adds the result to the next element, 
+#until the entire list is reduced to a single final number.
+
+#mission 2
+#1.The function takes the first two numbers, 2 and 3, and multiplies them.
+#2.It takes the result (6) and multiplies it by the next number in the list, which is 4
+#3.and the result will be 24
+
+#mission 3
+#I’ll use `map` when I want to modify each element individually but keep the same number of elements
+#I will use `reduce` when I want to combine all the elements and get a final result.
+
+#mission 4
+#Because it always performs an operation between two numbers, where x is the accumulated sum and y is the next element.
+
+#mission 5
+#`reduce` is preferable when I’m performing a simple operation on the entire list such as multiplying the elements together because it immediately clarifies the objective.
+#I will use a for-loop when I want to perform several operations and check conditions, such as doubling only even numbers.
