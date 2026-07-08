@@ -164,3 +164,8 @@ words = ["cat", "elephant", "dog", "computer"]
 longest = reduce(lambda x, y: x if len(x) >= len(y) else y, words)
 
 print(longest)
+
+#mission 4
+words = ["Python", "is", "very", "useful"]
+sentence = reduce(lambda x, y: x + " " + y, words)
+print(sentence)
